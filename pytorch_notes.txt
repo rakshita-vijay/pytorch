@@ -24,4 +24,22 @@ import matplotlib.pyplot as plt: to plot the graph of loss vs. epochs/batches
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
-convoluted nn: 
+convolutional nn: class of deep learning algos, particularly suited for image analysis 
+
+featured maps in cnns: output of a convolutional layer, representing the activation of filters (also called kernels) across the input image or another feature map
+                       matrix of activation numbers from 0-1
+
+what is convolution: 
+you have an image - which translates to a 6x6 grid of numbers from 0 to 1
+an image patch (local receptive field) is a 3x3 section of it
+
+this patch is multiplied with a kernel/filter (2D array - [[1,2,3],
+                                                           [4,5,6],
+                                                           [7,8,9]] )
+not matrix multiplication - just patch_box_value * kernel_box_value - call it 'patch_matrix'
+
+add up all the numbers in this patch_matrix
+this give you an output
+then you shift the img patch to the right (column++), repeat until you hit the end
+then row++, column reset to 0
+this "blurs" the images pixel-by-pixel, block-by-block 
