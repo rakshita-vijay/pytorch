@@ -19,3 +19,9 @@ relu: rectified linear unit
 f(x) = max(0, x) 
 - If x > 0, output x
 - If x <= 0, output 0
+
+import matplotlib.pyplot as plt: to plot the graph of loss vs. epochs/batches
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+convoluted nn: 
